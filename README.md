@@ -50,9 +50,14 @@ paint-on-overlay = true;
 vsync = "opengl-swc";
 ```
 Choose what is working for you.
-
-
-   
+3. Now you can start compton with that config file to test if it solves the problem for you:
+```
+compton --config ~/.config/compton.conf -b
+```
+4. If that work for you, you can place it in your i3wm config file, so it will be loaded on startup –
+```
+exec --no-startup-id compton --config ~/.config/compton.conf -b
+```
    
 
   
