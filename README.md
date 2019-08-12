@@ -58,6 +58,19 @@ compton --config ~/.config/compton.conf -b
 ```
 exec --no-startup-id compton --config ~/.config/compton.conf -b
 ```
+# Adding live volume measurement in i3status
+1. Edit /etc/i3status.conf and add: 
+```
+order += "volume master"
+```
+2. Also add the volume function:
+```
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse"
+}
+```
    
 
   
