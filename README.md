@@ -17,6 +17,15 @@ This repository consists of my i3 files, Scripts and patches
   ```
    This should do the trick.
    
+# To show low battery alert 
+  1. Install feh by:
+  ```
+  sudo apt-get install feh
+  ```
+  2. Make the batter-low.sh script executable by
+  ```
+  chmod +x battery-low.sh
+  ```
 # To setup the brightness settings head over to 
   https://github.com/jappeace/brightnessctl
 # To remove screen tearing 
