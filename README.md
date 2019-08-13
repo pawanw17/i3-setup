@@ -26,6 +26,10 @@ This repository consists of my i3 files, Scripts and patches
   ```
   chmod +x battery-low.sh
   ```
+  3. Edit the config file to run the script on every reload
+  ```
+  exec_always /home/shisui/Scripts/battery-low.sh
+  ```
 # To setup the brightness settings head over to 
   https://github.com/jappeace/brightnessctl
 # To remove screen tearing 
