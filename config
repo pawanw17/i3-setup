@@ -222,5 +222,11 @@ bindsym $mod+m exec echo "connect EB:06:EF:92:A7:51" | bluetoothctl
 #bindsym $mod+n exec echo "disconnect EB:06:EF:92:A7:51" | bluetoothctl
 bindsym $mod+n exec rfkill block bluetooth
 
+#Launches Chrome
 bindsym $mod+c exec google-chrome-stable
 
+# Screen Shots
+bindsym Print exec gnome-screenshot
+
+#Battery low
+exec_always /home/shisui/Scripts/battery-low.sh
